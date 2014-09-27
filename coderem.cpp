@@ -32,7 +32,7 @@ int main()
      temp.close();
        myfile.close();
      if( remove(fname.c_str()) != 0 )
-        perror( "Error deleting file" );
+        perror( "Error" );
   
     rename("temp.txt","test.cpp");
 
