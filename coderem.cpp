@@ -34,8 +34,7 @@ int main()
      if( remove(fname.c_str()) != 0 )
         perror( "Error" );
   
-    rename("temp.txt","test.cpp");
-
+    rename("temp.txt",fname.c_str());
   }
   else{
       cout << "Unable to open file";
