@@ -43,7 +43,17 @@ int main()
        }
        else if(flagOpen==0)
        {
-            // a lot can be done here. no case handled like printf("ff");//ckckdkkd
+            // a lot of cases are missed.
+            int ind=0;
+            for(ind=line.length()-1;ind>=0;ind--)
+           {
+               if(line[ind]==';')
+               {
+                    line=line.substr(0,ind+1);
+                   break;
+               }
+           }
+
            temp<<line<<endl;
            cout<<line<<endl;
        }
